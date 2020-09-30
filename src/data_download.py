@@ -137,9 +137,7 @@ if __name__ == "__main__":
     search_query = config.get('DEFAULT', 'Search_Query')
     retmax = config.get('DEFAULT', 'Max_Items_Retreived')
     publication_years = config.get('DEFAULT', 'Publication_Years').split(',')
-
-    months = ('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11',
-              '12')
+    months = config.get('DEFAULT', 'Publication_Months').split(',')
 
     for year in publication_years:
         for month in months:
