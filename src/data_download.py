@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 import os
 from tqdm import tqdm
+import time
 
 
 def fetch_using_id(accesion, db):
@@ -51,6 +52,7 @@ def write_sequences_to_disk(items, database, output_dir):
     sequences = []
     for accesion in tqdm(items):
         sequences.append(fetch_using_id(accesion, database))
+        time.sleep(0.5)
 
     if not os.path.exists(output_dir):
         os.mkdir(output_dir)
