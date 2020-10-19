@@ -48,4 +48,4 @@ mafft --auto --nomemsave --thread -1 --op 9 --ep 0.2 --lop 9 --lep 0.2 --LEXP 0.
 
 ```
 
-6. Run this file, assuming it is called *align.job* using `sbatch align.job"
+6. Run this file, assuming it is called *align.job* using `sbatch align.job`
