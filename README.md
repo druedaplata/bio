@@ -25,6 +25,8 @@
 
 3. Use the bash script `make.sh` if you need a joint metadata and fasta file for all sequences in a single year.
 
+4. Run the script `clean.py` in a year directory, it expects to find a subdirectory for each month, and a file **sequences.fasta** in each subdirectory. Returns a file **sequences_clean.fasta** that includes only complete sequences.
+
 4. For alignment we use [mafft](https://mafft.cbrc.jp/alignment/software/), read the documentation to understand the parameters and modify them to your needs.
 
 5. Create a file and copy the following script to align the sequences using mafft on Guane, read the [SLURM](https://slurm.schedmd.com/sbatch.html) documentation if you need more advanced options.
